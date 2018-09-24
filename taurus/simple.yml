@@ -1,0 +1,12 @@
+execution:
+- concurrency: 20
+  hold-for: 1m
+  scenario: quick-test
+  executor: gatling
+
+scenarios:
+  quick-test:
+    requests:
+    - url: http://ya.ru
+      method: GET
+
